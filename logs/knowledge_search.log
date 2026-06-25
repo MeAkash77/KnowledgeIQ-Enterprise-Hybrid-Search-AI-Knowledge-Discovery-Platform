@@ -1,0 +1,311 @@
+2026-06-26 00:47:12 | INFO     | __main__:ingest_sample_documents:22 - Starting sample document ingestion
+2026-06-26 00:47:12 | ERROR    | __main__:ingest_sample_documents:28 - Samples directory not found: C:\Users\KIIT\Desktop\ai-knowledge-search-platform-main\scripts\data\samples
+2026-06-26 00:51:17 | INFO     | __main__:ingest_sample_documents:23 - Starting sample document ingestion
+2026-06-26 00:51:17 | INFO     | __main__:ingest_sample_documents:29 - Looking for samples in: C:\Users\KIIT\Desktop\ai-knowledge-search-platform-main\data\samples
+2026-06-26 00:51:17 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 00:53:33 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 00:53:34 | INFO     | backend.embedding.index_manager:_initialize_client:43 - Created new collection: knowledge_search
+2026-06-26 00:53:34 | INFO     | backend.ingestion.loader:load_document:57 - Successfully loaded document: ai_basics.md
+2026-06-26 00:53:35 | INFO     | backend.ingestion.loader:load_document:57 - Successfully loaded document: machine_learning_guide.md
+2026-06-26 00:53:35 | INFO     | backend.ingestion.loader:load_document:57 - Successfully loaded document: neural_networks.md
+2026-06-26 00:53:35 | INFO     | backend.ingestion.loader:load_document:57 - Successfully loaded document: README.md
+2026-06-26 00:53:35 | INFO     | backend.ingestion.loader:load_directory:95 - Loaded 4 documents from C:\Users\KIIT\Desktop\ai-knowledge-search-platform-main\data\samples
+2026-06-26 00:53:35 | INFO     | __main__:ingest_sample_documents:50 - Found 4 sample documents
+2026-06-26 00:53:39 | INFO     | backend.ingestion.chunker:chunk_document:48 - Created 5 chunks from document: ai_basics.md
+2026-06-26 00:53:56 | INFO     | backend.embedding.index_manager:add_documents:98 - Successfully indexed 5 documents
+2026-06-26 00:53:56 | INFO     | __main__:ingest_sample_documents:72 - Processed: ai_basics.md -> 5 chunks
+2026-06-26 00:53:56 | INFO     | backend.ingestion.chunker:chunk_document:48 - Created 6 chunks from document: machine_learning_guide.md
+2026-06-26 00:53:56 | INFO     | backend.embedding.index_manager:add_documents:98 - Successfully indexed 6 documents
+2026-06-26 00:53:56 | INFO     | __main__:ingest_sample_documents:72 - Processed: machine_learning_guide.md -> 6 chunks
+2026-06-26 00:53:56 | INFO     | backend.ingestion.chunker:chunk_document:48 - Created 8 chunks from document: neural_networks.md
+2026-06-26 00:53:57 | INFO     | backend.embedding.index_manager:add_documents:98 - Successfully indexed 8 documents
+2026-06-26 00:53:57 | INFO     | __main__:ingest_sample_documents:72 - Processed: neural_networks.md -> 8 chunks
+2026-06-26 00:53:57 | INFO     | backend.ingestion.chunker:chunk_document:48 - Created 2 chunks from document: README.md
+2026-06-26 00:53:57 | INFO     | backend.embedding.index_manager:add_documents:98 - Successfully indexed 2 documents
+2026-06-26 00:53:57 | INFO     | __main__:ingest_sample_documents:72 - Processed: README.md -> 2 chunks
+2026-06-26 00:53:57 | INFO     | __main__:ingest_sample_documents:89 - Sample ingestion completed: 4/4 documents, 21 total chunks
+2026-06-26 00:53:57 | INFO     | __main__:ingest_sample_documents:97 - Collection stats: {'total_documents': 21, 'collection_name': 'knowledge_search', 'embedding_dimension': 384}
+2026-06-26 00:59:20 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 00:59:20 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 00:59:20 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:00:09 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:00:09 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:09 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:09 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:00:10 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:00:10 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:00:10 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:10 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:10 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:00:10 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:10 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:10 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:11 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:11 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:00:11 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:11 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:11 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:00:11 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:00:11 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:00:58 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:00:58 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:01:05 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:05 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:05 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:05 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:06 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:06 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:06 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:06 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:07 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:07 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:07 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:07 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:54 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:01:54 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:55 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:01:55 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:55 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:55 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:55 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:55 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:01:55 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:55 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:56 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:01:56 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:56 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:56 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:56 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:56 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:57 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:01:57 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:57 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:57 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:58 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:01:58 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:58 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:58 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:59 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:59 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:01:59 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:00 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:00 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:00 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:00 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:00 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:02:00 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:01 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:01 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:01 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:02 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:02 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:02:49 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:02:49 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:02:49 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:02:49 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:02:50 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:02:50 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:02:50 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:02:50 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:08:47 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:08:47 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:08:48 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:09:35 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:09:35 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:35 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:09:35 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:09:36 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:09:36 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:09:36 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:36 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:09:36 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:09:36 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:36 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:09:36 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:37 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:09:37 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:09:37 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:37 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:09:37 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:09:37 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:09:37 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:10:26 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:10:26 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:10:32 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:10:32 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:10:32 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:10:32 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:10:33 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:10:33 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:10:33 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:10:33 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:10:33 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:10:33 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:10:33 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:10:33 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:20 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:11:20 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:21 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:11:21 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:21 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:11:21 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:21 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:21 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:21 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:21 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:22 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:22 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:22 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:11:22 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:22 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:11:22 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:11:22 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:23 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:23 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:11:23 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:23 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:11:23 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:23 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:23 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:23 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:24 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:24 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:24 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:24 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:24 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:24 | INFO     | backend.generation.llm_client:_init_ollama:54 - Ollama client initialized with model: llama2
+2026-06-26 01:11:24 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: ollama
+2026-06-26 01:11:24 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:25 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:25 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:25 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:26 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:26 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:26 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:26 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:27 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:27 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:27 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:11:27 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:28 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:11:28 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:11:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:11:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:12:13 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:12:13 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:12:14 | INFO     | backend.main:startup_event:43 - Starting AI Knowledge Search Platform
+2026-06-26 01:12:14 | INFO     | backend.main:startup_event:44 - LLM Provider: ollama
+2026-06-26 01:12:14 | INFO     | backend.main:startup_event:45 - Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:12:15 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:12:15 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:43 - Starting AI Knowledge Search Platform
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:44 - LLM Provider: ollama
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:45 - Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:12:15 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:12:15 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:43 - Starting AI Knowledge Search Platform
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:44 - LLM Provider: ollama
+2026-06-26 01:12:15 | INFO     | backend.main:startup_event:45 - Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:12:17 | WARNING  | backend.core.cache:_initialize_redis:49 - Failed to connect to Redis: Timeout connecting to server. Caching disabled.
+2026-06-26 01:12:17 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:12:17 | INFO     | backend.main:startup_event:43 - Starting AI Knowledge Search Platform
+2026-06-26 01:12:17 | INFO     | backend.main:startup_event:44 - LLM Provider: ollama
+2026-06-26 01:12:17 | INFO     | backend.main:startup_event:45 - Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:12:44 | INFO     | backend.main:shutdown_event:54 - Shutting down AI Knowledge Search Platform
+2026-06-26 01:12:44 | INFO     | backend.main:shutdown_event:54 - Shutting down AI Knowledge Search Platform
+2026-06-26 01:12:44 | INFO     | backend.main:shutdown_event:54 - Shutting down AI Knowledge Search Platform
+2026-06-26 01:12:44 | INFO     | backend.main:shutdown_event:54 - Shutting down AI Knowledge Search Platform
+2026-06-26 01:17:26 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:26 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:27 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:17:27 | INFO     | backend.core.cache:_initialize_redis:25 - Caching is disabled
+2026-06-26 01:17:27 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:27 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:27 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:17:28 | INFO     | backend.generation.llm_client:_init_openai:42 - OpenAI client initialized
+2026-06-26 01:17:28 | INFO     | backend.generation.llm_client:_initialize_client:30 - LLM client initialized with provider: openai
+2026-06-26 01:17:28 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:28 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:17:28 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:28 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:28 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:29 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:29 | INFO     | backend.embedding.index_manager:_initialize_client:37 - Loaded existing collection: knowledge_search
+2026-06-26 01:17:29 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:29 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:29 | INFO     | backend.retrieval.hybrid:__init__:43 - Hybrid retriever initialized: BM25=0.30, Semantic=0.70
+2026-06-26 01:17:29 | INFO     | backend.embedding.embedder:_load_model:24 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:17:29 | INFO     | backend.embedding.embedder:_load_model:26 - Embedding model loaded successfully
+2026-06-26 01:17:29 | INFO     | backend.core.cache:_initialize_redis:25 - Caching is disabled
+2026-06-26 01:17:29 | INFO     | backend.generation.rag_pipeline:_initialize_pipeline:58 - RAG pipeline initialized
+2026-06-26 01:17:29 | INFO     | __main__:startup_event:37 - Starting AI Knowledge Search Platform
+2026-06-26 01:17:29 | INFO     | __main__:startup_event:38 - LLM Provider: openai
+2026-06-26 01:17:29 | INFO     | __main__:startup_event:39 - Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+2026-06-26 01:25:44 | INFO     | __main__:shutdown_event:47 - Shutting down AI Knowledge Search Platform
