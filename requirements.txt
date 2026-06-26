@@ -1,11 +1,13 @@
+# ======================================================
+# KnowledgeIQ - Enterprise Hybrid Search Platform
+# Production Requirements
+# ======================================================
+
 # =========================
 # Core Framework
 # =========================
 fastapi>=0.115.0
 uvicorn[standard]>=0.35.0
-
-# Remove this if you are deploying only the FastAPI backend.
-# Keep it only if you actually have a Streamlit frontend.
 streamlit>=1.46.0
 
 # =========================
@@ -13,15 +15,16 @@ streamlit>=1.46.0
 # =========================
 chromadb>=0.5.5
 
-# If you are migrating to Qdrant, uncomment these:
+# Optional (Future Migration)
 # qdrant-client>=1.15.1
 
 # =========================
-# Embeddings
+# Embeddings / AI
 # =========================
 sentence-transformers>=3.0.1
 transformers>=4.53.0
 torch>=2.7.1
+tokenizers>=0.21.0
 
 # =========================
 # Retrieval
@@ -35,6 +38,9 @@ PyPDF2>=3.0.1
 python-multipart>=0.0.20
 markdown>=3.8
 
+# Optional OCR
+Pillow>=11.0.0
+
 # =========================
 # LLM
 # =========================
@@ -42,11 +48,18 @@ openai>=1.95.1
 ollama>=0.5.1
 
 # =========================
-# Data
+# Data Science
 # =========================
 numpy>=1.26.4
 pandas>=2.3.0
 scikit-learn>=1.7.0
+scipy>=1.13.0
+
+# =========================
+# Visualization
+# =========================
+plotly>=6.1.2
+matplotlib>=3.9.0
 
 # =========================
 # Utilities
@@ -56,9 +69,15 @@ loguru>=0.7.3
 tiktoken>=0.9.0
 watchdog>=6.0.0
 
-# Pydantic v2
+# Pydantic V2
 pydantic>=2.11.0
 pydantic-settings>=2.10.0
+
+# =========================
+# HTTP
+# =========================
+httpx>=0.28.1
+requests>=2.32.4
 
 # =========================
 # Cache
@@ -67,10 +86,9 @@ redis>=6.2.0
 hiredis>=3.2.0
 
 # =========================
-# HTTP
+# Serialization
 # =========================
-httpx>=0.28.1
-requests>=2.32.4
+orjson>=3.10.0
 
 # =========================
 # Build
